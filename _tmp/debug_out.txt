@@ -1,0 +1,18 @@
+﻿swipl : Warning: c:/users/a-pc/downloads/prolog-ilp-diagnostics/prolog-ilp-diagnostics/prolog/tests.pl:292:
+строка:1 знак:205
++ ... ilp-diagnostics"; swipl -q -g main -t halt _tmp_debug.pl 2>&1 | Out-F ...
++                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Warning: c:/use...g/tests.pl:292::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Warning:    Singleton variables: [P1,P2]
+Warning: c:/users/a-pc/downloads/prolog-ilp-diagnostics/prolog-ilp-diagnostics/_tmp_debug.pl:5:
+Warning:    Singleton variables: [Ids]
+Warning: c:/users/a-pc/downloads/prolog-ilp-diagnostics/prolog-ilp-diagnostics/_tmp_debug.pl:5:
+Warning:    Local definition of user:main/0 overrides weak import from ilp_engine
+consts=[python]
+next=[[neg(package_absent-1),package_absent-1,requires_package-1],[neg(requires_package-1),package_absent-1,requires_package-1],[package_absent-1,package_absent-2,requires_package-1],[package_absent-1,requires_package-1,requires_package-2],[package_absent-1,requires_package-1,uses_runtime-1]]
+rules=[]
+infos=[class_info(missing_dependency,[n_pos-3,n_neg-3,n_rules-0,covered_positives-0,status-no_rule_found]),class_info(incompatible_version,[n_pos-0,n_neg-6,n_rules-0,covered_positives-0,status-no_positive_examples]),class_info(missing_config_key,[n_pos-0,n_neg-6,n_rules-0,covered_positives-0,status-no_positive_examples]),class_info(missing_environment_variable,[n_pos-0,n_neg-6,n_rules-0,covered_positives-0,status-no_positive_examples])]
+stats=[candidates_generated-107,candidates_tested-107,candidates_extended-19,hypotheses_scored-428,hypotheses_with_support-19,train_size-6,train_covered_share-0.0,elapsed_seconds-0.005,truncated-false,max_body_length-3,min_support-2,min_precision-0.8,smoothing-1.0,mdl_penalty-1.0,max_constants-20,max_rules_per_class-5,max_candidates-20000]
+warn=[warning(no_rule_found,missing_dependency),warning(no_positive_examples,incompatible_version),warning(no_positive_examples,missing_config_key),warning(no_positive_examples,missing_environment_variable)]

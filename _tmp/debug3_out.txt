@@ -1,0 +1,18 @@
+﻿swipl : Warning: c:/users/a-pc/downloads/prolog-ilp-diagnostics/prolog-ilp-diagnostics/prolog/tests.pl:294:
+строка:1 знак:205
++ ... lp-diagnostics"; swipl -q -g main -t halt _tmp_debug3.pl 2>&1 | Out-F ...
++                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Warning: c:/use...g/tests.pl:294::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Warning:    Singleton variables: [P1,P2]
+Warning: c:/users/a-pc/downloads/prolog-ilp-diagnostics/prolog-ilp-diagnostics/_tmp_debug3.pl:5:
+Warning:    Singleton variables: [E]
+Warning: c:/users/a-pc/downloads/prolog-ilp-diagnostics/prolog-ilp-diagnostics/_tmp_debug3.pl:5:
+Warning:    Local definition of user:main/0 overrides weak import from ilp_engine
+Warning: c:/users/a-pc/downloads/prolog-ilp-diagnostics/prolog-ilp-diagnostics/_tmp_debug3.pl:5:
+Warning:    Singleton variable in branch: E
+goals=[requires_package(n1,_37474),package_absent(n1,_37474),requires_package(n1,_37574),_37474\=_37574]
+env=[package-2-_37574,package-1-_37474]
+proof ok
+covers ok

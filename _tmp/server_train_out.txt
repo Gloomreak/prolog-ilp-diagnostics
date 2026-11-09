@@ -1,0 +1,15 @@
+﻿stats {'candidates_extended': 4377, 'candidates_generated': 4850, 'candidates_tested': 4850, 'elapsed_seconds': 6.3465, 'hypotheses_scored': 19400, 'hypotheses_with_support': 17426, 'max_body_length': 3, 'max_candidates': 20000, 'max_constants': 20, 'max_rules_per_class': 5, 'mdl_penalty': 1.0, 'min_precision': 0.8, 'min_support': 2, 'smoothing': 1.0, 'train_covered_share': 0.76, 'train_size': 400, 'truncated': False}
+missing_dependency 128 0 1.0 0.9947 | has_error(Project, missing_dependency) :- requires_package(Project, Package), package_absent(Project, Package).
+  body [{'args': ['Project', 'Package'], 'predicate': 'requires_package', 'var': 1}, {'args': ['Project', 'Package'], 'predicate': 'package_absent', 'var': 1}]
+incompatible_version 126 0 1.0 0.9946 | has_error(Project, incompatible_version) :- requires_package(Project, Package), version_mismatch(Project, Package).
+  body [{'args': ['Project', 'Package'], 'predicate': 'requires_package', 'var': 1}, {'args': ['Project', 'Package'], 'predicate': 'version_mismatch', 'var': 1}]
+missing_config_key 132 0 1.0 0.995 | has_error(Project, missing_config_key) :- requires_config_key(Project, Key), config_key_absent(Project, Key).
+  body [{'args': ['Project', 'Key'], 'predicate': 'requires_config_key', 'var': 1}, {'args': ['Project', 'Key'], 'predicate': 'config_key_absent', 'var': 1}]
+missing_environment_variable 107 0 1.0 0.9932 | has_error(Project, missing_environment_variable) :- requires_env_variable(Project, Variable), env_variable_absent(Project, Variable).
+  body [{'args': ['Project', 'Variable'], 'predicate': 'requires_env_variable', 'var': 1}, {'args': ['Project', 'Variable'], 'predicate': 'env_variable_absent', 'var': 1}]
+rejected
+  missing_dependency 109 0 ['no_new_positives'] has_error(Project, missing_dependency) :- requires_package(Project, Package), package_absent(Project, Package), \+ uses_
+  missing_dependency 108 0 ['no_new_positives'] has_error(Project, missing_dependency) :- requires_package(Project, Package), package_absent(Project, Package), \+ uses_
+  missing_dependency 106 0 ['no_new_positives'] has_error(Project, missing_dependency) :- requires_package(Project, Package), package_absent(Project, Package), \+ uses_
+  missing_dependency 106 0 ['no_new_positives'] has_error(Project, missing_dependency) :- requires_package(Project, Package), package_absent(Project, Package), \+ uses_
+  missing_dependency 104 0 ['no_new_positives'] has_error(Project, missing_dependency) :- requires_package(Project, Package), package_absent(Project, Package), \+ uses_

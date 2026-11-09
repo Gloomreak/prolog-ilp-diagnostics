@@ -1,0 +1,4 @@
+Метод,macro-F1,micro-F1,exact-match,"время обучения, с",F1 missing_dependency,F1 incompatible_version,F1 missing_config_key,F1 missing_environment_variable
+ILP (Prolog),1.0,1.0,1.0,6.149016699997446,1.0,1.0,1.0,1.0
+Decision Tree,0.7172464010479813,0.7136929460580914,0.43,0.021215400000073714,0.634920634920635,0.7164179104477612,0.7333333333333333,0.7843137254901961
+Decision Tree + агрегаты,1.0,1.0,1.0,0.008297699998365715,1.0,1.0,1.0,1.0

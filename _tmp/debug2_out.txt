@@ -1,0 +1,17 @@
+﻿swipl : Warning: c:/users/a-pc/downloads/prolog-ilp-diagnostics/prolog-ilp-diagnostics/prolog/tests.pl:292:
+строка:1 знак:205
++ ... lp-diagnostics"; swipl -q -g main -t halt _tmp_debug2.pl 2>&1 | Out-F ...
++                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Warning: c:/use...g/tests.pl:292::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Warning:    Singleton variables: [P1,P2]
+Warning: c:/users/a-pc/downloads/prolog-ilp-diagnostics/prolog-ilp-diagnostics/_tmp_debug2.pl:5:
+Warning:    Local definition of user:main/0 overrides weak import from ilp_engine
+canon failed
+one=[package_absent-1,requires_package-1,requires_package-2]
+cand=[package_absent-1,requires_package-1,requires_package-2]
+cand=[package_absent-1,package_absent-2,requires_package-1]
+cand=[package_absent-1,requires_package-1,uses_runtime-1]
+cand=[neg(requires_package-1),package_absent-1,requires_package-1]
+cand=[neg(package_absent-1),package_absent-1,requires_package-1]

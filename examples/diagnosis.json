@@ -1,0 +1,63 @@
+{
+  "format": "prolog-ilp-diagnostics/diagnosis",
+  "created_utc": "2026-11-09T22:35:23+00:00",
+  "warnings": [],
+  "results": [
+    {
+      "id": "demo_new_001",
+      "classes": {
+        "incompatible_version": {
+          "status": "not_detected",
+          "matches": [],
+          "missing_fields": []
+        },
+        "missing_config_key": {
+          "status": "not_detected",
+          "matches": [],
+          "missing_fields": []
+        },
+        "missing_dependency": {
+          "status": "detected",
+          "matches": [
+            {
+              "rule_index": 1,
+              "rule": "has_error(Project, missing_dependency) :-\n    requires_package(Project, Package),\n    package_absent(Project, Package).",
+              "precision": 1.0,
+              "precision_smoothed": 0.9947,
+              "proofs": [
+                {
+                  "bindings": {
+                    "Package": "pandas"
+                  },
+                  "facts": [
+                    {
+                      "args": [
+                        "demo_new_001",
+                        "pandas"
+                      ],
+                      "predicate": "requires_package"
+                    },
+                    {
+                      "args": [
+                        "demo_new_001",
+                        "pandas"
+                      ],
+                      "predicate": "package_absent"
+                    }
+                  ]
+                }
+              ],
+              "suggestion": "Установите пакет pandas (например, `pip install pandas`) или добавьте его в зависимости проекта."
+            }
+          ],
+          "missing_fields": []
+        },
+        "missing_environment_variable": {
+          "status": "not_detected",
+          "matches": [],
+          "missing_fields": []
+        }
+      }
+    }
+  ]
+}

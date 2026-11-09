@@ -1,0 +1,14 @@
+{
+  "id": "demo_new_001",
+  "facts": {
+    "required_packages": ["numpy", "pandas", "scikit-learn"],
+    "absent_packages": ["pandas", "scipy"],
+    "version_mismatches": [],
+    "required_config_keys": ["DATABASE_URL", "SECRET_KEY"],
+    "absent_config_keys": [],
+    "required_env_variables": ["API_TOKEN"],
+    "absent_env_variables": [],
+    "build_tools": ["pip"],
+    "runtimes": ["python"]
+  }
+}

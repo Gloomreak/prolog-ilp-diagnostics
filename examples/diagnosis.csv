@@ -1,0 +1,5 @@
+project_id,error_class,status,rule,substitution,facts,suggestion
+demo_new_001,missing_dependency,detected,"has_error(Project, missing_dependency) :-     requires_package(Project, Package),     package_absent(Project, Package).",Package=pandas,"requires_package(demo_new_001, pandas); package_absent(demo_new_001, pandas)","Установите пакет pandas (например, `pip install pandas`) или добавьте его в зависимости проекта."
+demo_new_001,incompatible_version,not_detected,,,,
+demo_new_001,missing_config_key,not_detected,,,,
+demo_new_001,missing_environment_variable,not_detected,,,,

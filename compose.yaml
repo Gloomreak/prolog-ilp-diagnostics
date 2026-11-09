@@ -1,0 +1,15 @@
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - "127.0.0.1:8501:8501"
+    environment:
+      SWIPL_PATH: /usr/bin/swipl
+      ILP_TIMEOUT_SECONDS: ${ILP_TIMEOUT_SECONDS:-300}
+    volumes:
+      - results:/app/results
+    restart: unless-stopped
+
+volumes:
+  results:

@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "projects": [
+    {"id": "ok_001", "labels": ["missing_dependency"],
+     "facts": {"required_packages": ["numpy"], "absent_packages": ["numpy"]}},
+    {"id": "bad_label", "labels": ["unknown_error_class"], "facts": {}},
+    {"id": "bad_type", "labels": [], "facts": {"required_packages": "numpy"}},
+    {"id": "ok_001", "labels": [], "facts": {}},
+    {"id": "no_labels", "facts": {}},
+    {"labels": [], "facts": {}},
+    {"id": "extra_field", "labels": [], "facts": {"required_packages": [], "mystery": 1}, "comment": "x"}
+  ]
+}

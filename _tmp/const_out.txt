@@ -1,0 +1,9 @@
+﻿missing_dependency 3 0 | has_error(Project, missing_dependency) :- package_absent(Project, Package), uses_build_tool(Project, Tool), uses_build_tool(Project, poetry).
+[{"args": ["Project", "Package"], "predicate": "package_absent", "var": 1}, {"args": ["Project", "Tool"], "predicate": "uses_build_tool", "var": 1}, {"args": ["Project", "poetry"], "const": "poetry", "predicate": "uses_build_tool"}]
+rejected:
+missing_dependency 3 2 ['low_precision'] has_error(Project, missing_dependency) :- package_absent(Project, Package).
+missing_dependency 3 4 ['low_precision'] has_error(Project, missing_dependency) :- requires_package(Project, Package).
+missing_dependency 3 4 ['low_precision'] has_error(Project, missing_dependency) :- uses_build_tool(Project, Tool).
+missing_dependency 3 2 ['low_precision'] has_error(Project, missing_dependency) :- package_absent(Project, Package), \+ version_mismatch(Project, Package).
+missing_dependency 3 2 ['low_precision'] has_error(Project, missing_dependency) :- package_absent(Project, Package1), package_absent(Project, Package2).
+stats {'candidates_extended': 46, 'candidates_generated': 201, 'candidates_tested': 201, 'elapsed_seconds': 0.0106, 'hypotheses_scored': 804, 'hypotheses_with_support': 46, 'max_body_length': 3, 'max_candidates': 20000, 'max_constants': 20, 'max_rules_per_class': 5, 'mdl_penalty': 1.0, 'min_precision': 0.8, 'min_support': 2, 'smoothing': 1.0, 'train_covered_share': 0.4286, 'train_size': 7, 'truncated': False}

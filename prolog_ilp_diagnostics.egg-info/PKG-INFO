@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: prolog-ilp-diagnostics
+Version: 1.0.0
+Summary: Streamlit application for inductive logic programming diagnostics with SWI-Prolog
+Requires-Python: >=3.11
+Requires-Dist: streamlit==1.67.0
+Requires-Dist: pandas==3.1.1
+Requires-Dist: numpy==2.5.4
+Requires-Dist: scikit-learn==1.9.1
+Requires-Dist: matplotlib==3.11.2
+Requires-Dist: packaging==26.3
+Provides-Extra: dev
+Requires-Dist: pytest==9.2.0; extra == "dev"
+Requires-Dist: ruff==0.17.4; extra == "dev"

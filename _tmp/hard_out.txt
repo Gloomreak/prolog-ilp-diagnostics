@@ -1,0 +1,18 @@
+﻿== demo_hard.json
+ok True n 500 unknown fields 0
+stats 4850 6.506 False
+missing_dependency 120 0 0.9942 | has_error(Project, missing_dependency) :- uses_build_tool(Project, poetry).
+incompatible_version 125 0 0.9945 | has_error(Project, incompatible_version) :- uses_runtime(Project, python).
+missing_config_key 113 0 0.9937 | has_error(Project, missing_config_key) :- requires_config_key(Project, Key), config_key_absent(Project, Key).
+missing_environment_variable 128 0 0.9947 | has_error(Project, missing_environment_variable) :- requires_env_variable(Project, Variable), env_variable_absent(Project, Variable).
+== demo_partial.json
+ok True n 500 unknown fields 342
+stats 4850 6.1626 False
+missing_dependency 84 0 0.9915 | has_error(Project, missing_dependency) :- requires_package(Project, Package), package_absent(Project, Package).
+missing_dependency 11 2 0.8055 | has_error(Project, missing_dependency) :- package_absent(Project, Package), uses_runtime(Project, go), uses_runtime(Project, java).
+incompatible_version 80 0 0.9909 | has_error(Project, incompatible_version) :- requires_package(Project, Package), version_mismatch(Project, Package).
+incompatible_version 7 1 0.8067 | has_error(Project, incompatible_version) :- version_mismatch(Project, Package), uses_build_tool(Project, gradle), uses_runtime(Project, node).
+missing_config_key 96 0 0.9928 | has_error(Project, missing_config_key) :- requires_config_key(Project, Key), config_key_absent(Project, Key).
+missing_environment_variable 91 0 0.9926 | has_error(Project, missing_environment_variable) :- requires_env_variable(Project, Variable), env_variable_absent(Project, Variable).
+missing_environment_variable 3 0 0.83 | has_error(Project, missing_environment_variable) :- config_key_absent(Project, Key), uses_build_tool(Project, make), uses_build_tool(Project, pip).
+missing_environment_variable 4 0 0.864 | has_error(Project, missing_environment_variable) :- package_absent(Project, Package), uses_build_tool(Project, maven), uses_build_tool(Project, pipenv).
